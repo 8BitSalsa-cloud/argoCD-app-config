@@ -4,21 +4,21 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
 spec:
- project: default
+  project: default
 
- source:
-  repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
-  tragetRevision: HEAD
-  path: dev
+  source:
+    repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
+    tragetRevision: HEAD
+    path: dev
 
- destination:
-  server: https://kubernetis.default.svc
-  namespace: myapp 
+  destination:
+    server: https://kubernetis.default.svc
+    namespace: myapp 
 
- syncPoliciy:
-  syncOptions:
-  - CreateNamespace=True 
-  automated:        #creates and delete if nessesarry
-    selfHeal: True   
-    prune: True
+  syncPoliciy:
+    syncOptions:
+    - CreateNamespace=True 
+    automated:        #creates and delete if nessesarry
+      selfHeal: True   
+      prune: True
        #creates a namespace if it not exsits
