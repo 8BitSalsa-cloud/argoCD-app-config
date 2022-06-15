@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
-    tragetRevision: HEAD
+    targetRevision: HEAD
     path: dev
 
   destination:
