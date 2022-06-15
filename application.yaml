@@ -6,16 +6,16 @@ metadata:
 spec:
  project: default
 
-source:
+ source:
   repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
   tragetRevision: HEAD
   path: dev
 
-destination:
+ destination:
   server: https://kubernetis.default.svc
   namespace: myapp 
 
-syncPoliciy:
+ syncPoliciy:
   syncOptions:
   - CreateNamespace=True 
   automated:        #creates and delete if nessesarry
