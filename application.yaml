@@ -15,7 +15,7 @@ spec:
     server: https://kubernetis.default.svc
     namespace: myapp 
 
-  syncPoliciy:
+  syncPolicy:
     syncOptions:
     - CreateNamespace=True 
     automated:        #creates and delete if nessesarry
