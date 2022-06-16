@@ -7,18 +7,17 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
+    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
     targetRevision: HEAD
     path: dev
-
-  destination:
+  destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp 
+    namespace: myapp
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=True 
-    automated:        #creates and delete if nessesarry
-      selfHeal: True   
-      prune: True
-       #creates a namespace if it not exsits
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
