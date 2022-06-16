@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/8BitSalsa-cloud/argocd-app-config.git
+    repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
     targetRevision: HEAD
     path: dev
   destination: 
