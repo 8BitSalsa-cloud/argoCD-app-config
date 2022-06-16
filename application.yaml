@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
-    targetRevision: HEAD
+    targetRevision: HEAD   #schaut sich das letzte Ergeignis im Repo an
     path: dev
   destination: 
     server: https://kubernetes.default.svc 
