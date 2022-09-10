@@ -9,15 +9,16 @@ spec:
   source:
     repoURL: https://github.com/8BitSalsa-cloud/argoCD-app-config.git
     targetRevision: HEAD   #schaut sich das letzte Ergeignis im Repo an
-    path: dev
+    path: dev   
   destination: 
     server: https://kubernetes.default.svc 
     namespace: myapp
-
+# automatisch einen Namespace erstellen, wenn er nicht vorhanden ist
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
 
+# sync mit dem dem GitRepo
     automated:
       selfHeal: true
       prune: true
