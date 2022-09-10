@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: iwap/docker101tutorial #nanajanashia/argocd-app:1.0
+        image: iwap/docker101tutorial:latest #nanajanashia/argocd-app:1.0
         ports:
         - containerPort: 8080
